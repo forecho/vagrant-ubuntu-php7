@@ -12,7 +12,7 @@ Vagrant.configure(2) do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
-  config.vm.box = "precise64"
+  config.vm.box = "trusty64"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -69,7 +69,7 @@ Vagrant.configure(2) do |config|
   #   sudo apt-get install -y apache2
   # SHELL
   config.vm.provision "shell", path: "./vagrant.sh"
-  
+
   # 每次启动都执行restart，让文件映射之后的nginx配置生效
   $shell = <<-SHELL
     sudo service nginx restart > /dev/null 2>&1

@@ -1,0 +1,4 @@
+2016/07/10 14:30:39 [error] 17430#0: *36 directory index of "/usr/share/nginx//" is forbidden, client: 192.168.33.1, server: *.dev.com, request: "GET / HTTP/1.1", host: "www.dev.com"
+2016/07/10 14:30:40 [error] 17430#0: *36 directory index of "/usr/share/nginx//" is forbidden, client: 192.168.33.1, server: *.dev.com, request: "GET / HTTP/1.1", host: "www.dev.com"
+2016/07/10 14:30:40 [error] 17430#0: *36 directory index of "/usr/share/nginx//" is forbidden, client: 192.168.33.1, server: *.dev.com, request: "GET / HTTP/1.1", host: "www.dev.com"
+2016/07/10 14:30:41 [error] 17430#0: *36 directory index of "/usr/share/nginx//" is forbidden, client: 192.168.33.1, server: *.dev.com, request: "GET / HTTP/1.1", host: "www.dev.com"
