@@ -44,7 +44,7 @@ apt-get install mysql-server -y
 
 
 # install required packages
-apt-get install -y php7.0 php7.0-fpm php7.0-mysql php-mongodb php-redis php7.0-curl php7.0-mcrypt php7.0-gd php7.0-cli php-xdebug php7.0-intl php-memcached php7.0-mbstring php-imagick php7.0-imap nginx curl
+apt-get install -y php7.0 php7.0-fpm php7.0-mysql php-mongodb php-redis php7.0-curl php7.0-mcrypt php7.0-gd php7.0-cli php-xdebug php7.0-intl php-memcached php7.0-mbstring php-imagick php7.0-imap php-bcmath nginx curl
 
 # install composer
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
