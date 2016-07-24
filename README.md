@@ -127,9 +127,59 @@ sudo vim /etc/nginx/conf.d/default.conf
 sudo service mysql restart
 ```
 
+
+## 常见问题
+
+
+**Mac 下使用虚拟机，运行项目的时候提示 「Permission denied」没有权限问题？**
+
+这个是因为 Nginx 、PHP 和 项目文件夹用户组不一致导致的问题，解决办法是：
+
+修改 nginx 用户组：
+
+```
+$ sudo vim /etc/nginx/nginx.conf
+```
+
+```
+# 修改为 vagrant
+# user  www-data;
+user  vagrant;
+```
+
+修改 PHP 用户组：
+
+```
+$ sudo vim /etc/php/7.0/fpm/pool.d/www.conf
+```
+
+```
+; 修改用户为nginx
+; user = www-data
+user = vagrant
+; 修改组为 vagrant
+; group = www-data
+group = vagrant
+
+
+; listen.owner = www-data
+; listen.group = www-data
+
+listen.owner = vagrant
+listen.group = vagrant
+```
+
+然后重启 Nginx 和 PHP
+
+```
+$ sudo service nginx restart
+$ sudo service php7.0-fpm restart
+```
+
 ## 参考文档
 
 - [路径（七）：用 Vagrant 管理虚拟机](http://ninghao.net/blog/2077)
 - [1.2 Vagrant安装配置](https://github.com/astaxie/Go-in-Action/blob/master/ebook/zh/01.2.md)
 - [forecho/vagrant-ubuntu-trusty-64](https://github.com/forecho/vagrant-ubuntu-trusty-64)
 - [How To Upgrade to PHP 7 on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-upgrade-to-php-7-on-ubuntu-14-04)
+- [解决Mac 下使用 vagrant 搭建 Yii2 生成 assets 提示 「Permission denied」没有权限问题](http://www.getyii.com/topic/153)
