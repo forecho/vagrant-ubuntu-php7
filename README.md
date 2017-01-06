@@ -18,6 +18,11 @@
 
 ## 如何搭建
 
+先安装好 VirtualBox 和 vagrant 软件，推荐使用版本（上面的百度盘链接里面有提供以下 Windows7 版本）：
+
+ - VirtualBox-4.3.10-93012-Win
+ - vagrant_1.7.4
+ 
 下载 ubuntu_trusty_64.box, 执行以下命令添加刚才下载好的 box 到 Box list：
 
 ```sh
@@ -29,8 +34,6 @@ vagrant box list // 查看
 mkdir ubuntu // 创建文件夹
 git clone https://github.com/forecho/vagrant-ubuntu-php7.git php7
 cd php7
-vagrant init // 初始化
-
 ```
 然后启动 vagrant
 
