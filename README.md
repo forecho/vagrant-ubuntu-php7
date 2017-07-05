@@ -88,7 +88,7 @@ sudo su // 不需要输入密码
 **注意**
 - 因为是虚拟机，所以添加 hosts 这一步是必须的。
 - 域名只做了三层解析，太多层觉得没必要。也就是说URL `cai-zheng-hai-open.dev.com` 默认是不行的。
-- **Windows 可以使用 Acrylic 软件让 host 支持通配符解析，参考文章：[支持通配符和正则表达式的hosts文件(本地dns缓存及代理)](http://grow.sinaapp.com/?p=1368)**
+- **Windows 可以使用 Acrylic 软件让 host 支持通配符解析，参考文章：[支持通配符和正则表达式的hosts文件(本地dns缓存及代理)](https://blog.tianqitu.net/2014/11/22/hosts-that-support-wildcards-and-regular-expressions/)**
 - **Mac 可以使用 Dnsmasq 软件让 host 支持通配符解析，参考文章：[Mac OSX 安装 Dnsmasq 来加速网络](http://www.shixf.com/wiki/os/macosx/dnsmasq)**
 
 
