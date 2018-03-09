@@ -65,5 +65,5 @@ apt-get install git -y
 
 # install autojump https://github.com/wting/autojump
 git clone git://github.com/joelthelion/autojump.git /home/vagrant/autojump
-cd /home/vagrant/autojump && ./install.py
-sudo -H -u vagrant bash -i -c 'echo "[[ -s /root/.autojump/etc/profile.d/autojump.sh ]] && source /root/.autojump/etc/profile.d/autojump.sh">> ~/.bashrc'
+sudo -H -u vagrant bash -i -c 'cd /home/vagrant/autojump && ./install.py'
+sudo -H -u vagrant bash -i -c 'echo "[[ -s /home/vagrant/.autojump/etc/profile.d/autojump.sh ]] && source /home/vagrant/.autojump/etc/profile.d/autojump.sh">> /home/vagrant/.bashrc'
