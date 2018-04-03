@@ -53,6 +53,7 @@ php -r "unlink('composer-setup.php');"
 
 mv /home/vagrant/composer.phar /usr/local/bin/composer
 composer global require "fxp/composer-asset-plugin:^1.2.0"
+composer global require hirak/prestissimo
 composer self-update
 composer global update --prefer-dist
 
