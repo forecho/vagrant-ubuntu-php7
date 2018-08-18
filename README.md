@@ -181,6 +181,7 @@ $ sudo service php7.0-fpm restart
 
 ## 参考文档
 
+- [发现 Vagrant Boxes](https://app.vagrantup.com/boxes/search)
 - [路径（七）：用 Vagrant 管理虚拟机](http://ninghao.net/blog/2077)
 - [1.2 Vagrant安装配置](https://github.com/astaxie/Go-in-Action/blob/master/ebook/zh/01.2.md)
 - [forecho/vagrant-ubuntu-trusty-64](https://github.com/forecho/vagrant-ubuntu-trusty-64)
